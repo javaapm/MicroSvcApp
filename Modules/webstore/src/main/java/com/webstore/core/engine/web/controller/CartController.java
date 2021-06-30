@@ -33,6 +33,7 @@ public class CartController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String productIdStr = request.getParameter("productId"); 
 //		String redirectto =  request.getParameter("redirectto");
+		System.out.println("INFO  CART-ACTION-DELETE  There is an item has been removed from cart. ProductID = "+productIdStr);
 		boolean emptyCart = false;
 		int productId = -1;
 		if(productIdStr != null){
